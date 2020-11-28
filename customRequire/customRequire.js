@@ -1,7 +1,13 @@
-var require = function (src, dependencies, success_callback) {
+/***************************************************************************
+    This customRequire function load src after all dependencies loaded
+    Type of parameter src is a string
+    Type of dependencies is an array of string
+    Type of success_callback is function
+    This function will be updated for handling dependencies of dependencies
+ **************************************************************************/
 
+var customRequire = function (src, dependencies, success_callback) {
     console.log("There is/are " + dependencies.length + " dependencies")
-
     var load = function (dependenciesUrl, index, success_callback) {
         var script = document.createElement('script');
         script.src = dependenciesUrl;

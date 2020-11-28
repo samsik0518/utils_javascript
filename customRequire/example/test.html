@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Custom Require Function Example</title>
+</head>
+<body>
+<h1>Custom Require Function Example</h1>
+<script src="./../customRequire.js"></script>
+<script>
+    var src= './target.js';
+    var dependencies=["https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js",  "https://code.jquery.com/jquery-3.2.1.slim.min.js"];
+    customRequire(src, dependencies);
+
+</script>
+</body>
+</html>
